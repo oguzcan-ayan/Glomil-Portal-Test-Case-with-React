@@ -1,0 +1,622 @@
+@media (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: 0;
+    outline: 0;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  a {
+    color: black;
+  }
+  .portal-header {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    border-bottom: 1px solid #dedede;
+    background-color: white;
+  }
+  .portal-header a {
+    width: auto;
+    height: auto;
+  }
+  .portal-header a .glomil-logo {
+    margin-top: 0;
+    width: 100px;
+    height: 85px;
+    cursor: pointer;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .portal-header .main-contents {
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-left: 0;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+  .portal-header .main-contents :hover {
+    text-decoration: underline;
+  }
+  .portal-header .main-contents :first-child {
+    display: inline-block;
+    margin-left: 1rem;
+  }
+  .portal-header .main-contents a {
+    margin-left: 1rem;
+  }
+  .portal-header .more-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: #cfcfcf;
+    color: #176192;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+  }
+  .portal-header .more-btn svg {
+    margin-top: 3px;
+  }
+  .portal-header .user-buttons {
+    margin-left: 2rem;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .portal-header .user-buttons .bell-icon {
+    width: 20px;
+    height: 20px;
+    color: rgb(0, 50, 100);
+    opacity: 0.7;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  .portal-header .user-buttons .bell-icon :hover {
+    opacity: 1;
+    color: blue;
+  }
+  .portal-header .user-buttons .help-icon {
+    width: 20px;
+    height: 20px;
+    color: rgb(0, 50, 100);
+    opacity: 0.7;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  .portal-header .user-buttons .help-icon :hover {
+    opacity: 1;
+    color: blue;
+  }
+  .portal-header .user-buttons .settings-icon {
+    width: 20px;
+    height: 20px;
+    color: rgb(0, 50, 100);
+    opacity: 0.7;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  .portal-header .user-buttons .settings-icon :hover {
+    opacity: 1;
+    color: blue;
+  }
+  .portal-header .user-buttons .user-log {
+    display: inline-block;
+    bottom: 5px;
+    width: 3rem;
+    height: 2.8rem;
+    background-color: rgb(79, 121, 149);
+    border-radius: 50%;
+    opacity: 0.5;
+    position: relative;
+    cursor: pointer;
+  }
+  .portal-header .user-buttons .user-log .user-active-dot {
+    width: 0.8rem;
+    height: 0.8rem;
+    position: absolute;
+    background-color: rgb(0, 169, 0);
+    border-radius: 50%;
+    bottom: 2px;
+    right: 1px;
+  }
+  .portal-header .user-buttons .user-log .user-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    color: white;
+    margin-left: 0.6rem;
+    margin-top: 0.5rem;
+  }
+  .portal-header .user-buttons .user-info {
+    width: auto;
+    height: 3rem;
+    margin-left: 1rem;
+  }
+  .portal-header .user-buttons .user-info .username {
+    cursor: pointer;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    opacity: 0.7;
+  }
+  .portal-header .user-buttons .user-info .user-mail {
+    width: auto;
+    height: 1.5rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    color: rgb(75, 115, 135);
+    font-weight: 500;
+  }
+  .l-mobile-modal {
+    max-width: 720px;
+    background: rgba(222, 222, 222, 0.8);
+    box-shadow: 5px 5px 25px 25px #172B4E;
+    padding: 100px;
+    position: relative;
+    right: 0;
+  }
+  .l-mobile-modal .close-modal-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: azure;
+  }
+  .l-mobile-modal .close-modal-btn svg {
+    height: 20px;
+    width: 20px;
+    color: rgb(179, 35, 35);
+  }
+  .l-mobile-modal .searchbox {
+    width: 100%;
+    height: 2rem;
+    position: relative;
+    margin-left: 1rem;
+  }
+  .l-mobile-modal .searchbox .search-icon {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 4px;
+    left: 10px;
+    color: grey;
+  }
+  .l-mobile-modal .searchbox input {
+    border: 2px solid gainsboro;
+    border-radius: 5px;
+    width: 100%;
+    height: 2rem;
+    padding: 5px 0 5px 3rem;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .l-mobile-modal .searchbox .searchbox-info {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background-color: #dedede;
+  }
+  .l-mobile-modal .searchbox .searchbox-info a {
+    text-align: center;
+  }
+  .l-mobile-modal .searchbox .searchbox-info a button {
+    width: 100%;
+    height: auto;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  .l-mobile-modal .searchbox .searchbox-info a button :hover {
+    background-color: #dedede;
+  }
+  .l-mobile-modal .user-contents {
+    margin-top: 0;
+    margin-left: 0;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+  }
+  .l-mobile-modal .user-contents .user-log {
+    top: 0;
+    left: 10px;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(79, 121, 149);
+    border-radius: 50%;
+    opacity: 0.5;
+    position: relative;
+    cursor: pointer;
+  }
+  .l-mobile-modal .user-contents .user-log .user-active-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    background-color: rgb(0, 169, 0);
+    border-radius: 50%;
+    bottom: 1px;
+    right: 1px;
+  }
+  .l-mobile-modal .user-contents .user-log .user-icon {
+    width: 20px;
+    height: 20px;
+    color: white;
+    margin-left: 6px;
+    margin-top: 5px;
+  }
+  .l-mobile-modal .user-contents .user-info {
+    width: auto;
+    height: 3rem;
+    margin-left: 0;
+  }
+  .l-mobile-modal .user-contents .user-info .username {
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-left: 2.5rem;
+    opacity: 0.7;
+  }
+  .l-mobile-modal .user-contents .user-info .user-mail {
+    width: auto;
+    height: 1.5rem;
+    margin-top: 5px;
+    cursor: pointer;
+    color: rgb(75, 115, 135);
+    font-weight: 500;
+    font-size: 12px;
+    margin-left: 18px;
+  }
+  .l-mobile-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  .welcome-to-portal-content {
+    width: auto;
+    height: 400px;
+    background-color: #172B4E;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .welcome-to-portal-content .welcome-to-portal-image {
+    width: 25%;
+    height: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    flex-grow: 1;
+  }
+  .welcome-to-portal-content .portal-entry {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: auto;
+    margin-left: 10%;
+  }
+  .welcome-to-portal-content .portal-entry .welcome-to-portal {
+    width: 75%;
+    height: auto;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+  }
+  .welcome-to-portal-content .portal-entry .portal-info {
+    width: 60%;
+    height: auto;
+    font-size: 14px;
+    color: white;
+    line-height: 1.2;
+  }
+  .welcome-to-portal-content .welcome-button-content {
+    width: 50%;
+    height: 3rem;
+    margin-top: 1rem;
+  }
+  .welcome-to-portal-content .welcome-button-content button {
+    width: 100%;
+    height: 2.5rem;
+    cursor: pointer;
+    background-color: rgb(14, 114, 255);
+    border-radius: 2px;
+    color: white;
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .portal-services-content .portal-services p {
+    width: 75%;
+    font-size: 16px;
+  }
+  .portal-services-content .portal-services .service-cards-content {
+    margin-left: 5%;
+  }
+  .portal-services-content .portal-services .service-cards-content .sentiment-live {
+    width: 75%;
+    height: auto;
+    position: relative;
+  }
+  .portal-services-content .portal-services .service-cards-content .bots-live {
+    width: 75%;
+    height: auto;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  .footer-content span {
+    font-size: 15px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .footer-content a {
+    font-size: 15px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .sidebar .sidebar-title {
+    font-size: 15px;
+  }
+  .sidebar .sidebar-container .sidebar-info .service-title {
+    font-size: 15px;
+  }
+  .sidebar .sidebar-container svg {
+    width: 2.5rem;
+    height: 20px;
+  }
+  .sentiment-container .sentiment-bots-info {
+    margin-left: 1.5rem;
+  }
+  .sentiment-container .sentiment-bots-info h1 {
+    margin-top: 1rem;
+  }
+  .sentiment-container .sentiment-bots-info p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 14px;
+  }
+  .query-field {
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    /*    .toastify-container{
+        svg{
+            width: 2rem;
+            height: 2rem;
+            top: 1rem;
+            right: 1rem;
+        }
+    } */
+  }
+  .query-field .text-query-field {
+    margin-top: 1rem;
+  }
+  .query-field .text-query-field input {
+    width: 50%;
+    height: 3rem;
+    padding-bottom: 1rem;
+    font-size: 12px;
+  }
+  .query-field .text-query-field .query-btn {
+    width: 30%;
+    height: 30px;
+    font-size: 13px;
+  }
+  .query-field .query-result {
+    height: 2.5rem;
+    margin-top: 12px;
+  }
+  .query-field .query-result .query-true-field {
+    width: 14px;
+    height: 14px;
+    top: 6px;
+  }
+  .query-field .query-result .query-true-field .true-icon {
+    width: 10px;
+    height: 10px;
+  }
+  .bots-container .sentiment-bots-info {
+    margin-left: 1.5rem;
+  }
+  .bots-container .sentiment-bots-info h1 {
+    margin-top: 1rem;
+  }
+  .bots-container .sentiment-bots-info p {
+    margin-bottom: 1rem;
+    font-size: 14px;
+  }
+  .algorithm-field-info {
+    margin-left: 5%;
+    margin-top: 1rem;
+  }
+  .algorithm-field-info label {
+    margin-top: 10px;
+  }
+  .algorithm-field {
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  .algorithm-field div .user-algorithm {
+    padding-right: 1rem;
+  }
+  .algorithm-field div .user-algorithm .bot-user-algorithm {
+    padding-bottom: 0.5rem;
+  }
+  .algorithm-field div .user-algorithm .bot-user-algorithm select {
+    height: 2rem;
+    padding-left: 0;
+    font-size: 10px;
+  }
+  .algorithm-field div .user-algorithm .bot-user-algorithm select option {
+    font-size: 20px;
+  }
+  .algorithm-field div .user-algorithm .user-count-container div {
+    height: 2rem;
+    margin-top: 0.5rem;
+  }
+  .algorithm-field div .user-algorithm .user-count-container div input {
+    font-size: 16px;
+    padding-left: 5px;
+    padding-bottom: 7px;
+  }
+  .algorithm-field div .user-algorithm .user-count-container .algorithm-btn-content {
+    width: 75%;
+  }
+  .algorithm-field div .user-algorithm .user-count-container .algorithm-btn-content .algorithm-btn {
+    height: 1.5rem;
+    font-size: 13px;
+  }
+  .algorithm-field div .algorithm-result h1 {
+    font-size: 17px;
+  }
+  .algorithm-field div .algorithm-result .algorithm-result-box {
+    margin-top: 15px;
+  }
+  .algorithm-field div .algorithm-result .algorithm-result-box .algorithm-true-field {
+    width: 20px;
+    height: 20px;
+    top: 15px;
+    left: 10px;
+  }
+  .algorithm-field div .algorithm-result .algorithm-result-box .algorithm-true-field .true-icon {
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    margin-left: 1px;
+  }
+  .algorithm-field div .algorithm-result .algorithm-result-box .algorithm-result-text-box {
+    margin-top: 17px;
+    margin-right: 0;
+    margin-left: 0.5rem;
+  }
+  .algorithm-field div .algorithm-result .algorithm-result-box .algorithm-result-text-box .algorithm-result-text {
+    font-size: 14px;
+  }
+  .algorithm-field div .algorithm-result .algorithm-result-box .algorithm-result-text-box .algorithm-ratio {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 14px;
+  }
+  .services-container h1 {
+    width: 75%;
+    font-size: 25px;
+  }
+  .services-container p {
+    width: 75%;
+    font-size: 20px;
+  }
+  .services-container div a {
+    font-size: 18px;
+  }
+  .services-container div span {
+    margin-top: 4px;
+  }
+  .services-content .service-cards-content {
+    margin-left: 2%;
+    gap: 0.5rem;
+  }
+  .services-content .service-cards-content .service-cards {
+    width: 10rem !important;
+    height: 20rem !important;
+  }
+  .services-content .service-cards-content .service-cards .service-cards-image {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+  }
+  .services-content .service-cards-content .service-cards .service-cards-image svg {
+    margin-left: 10px;
+    margin-top: 0.5rem;
+  }
+  .services-content .service-cards-content .service-cards .service-cards-header {
+    top: 22%;
+    left: 1rem;
+    font-size: 18px;
+  }
+  .services-content .service-cards-content .service-cards .service-cards-message {
+    font-size: 15px;
+    width: 75%;
+    top: 45%;
+    left: 1rem;
+  }
+  .services-content .service-cards-content .service-cards .service-cards-btn {
+    bottom: 1rem;
+    left: 1rem;
+    width: 75%;
+    height: 2rem;
+  }
+  .breadcrumb-content {
+    margin-top: 25%;
+  }
+  .breadcrumb-content a .breadcrumb {
+    font-size: 14px;
+  }
+  .breadcrumb-content a .split-breadcrumbs {
+    font-size: 16px;
+  }
+  .breadcrumb-content a .breadcrumb-home-icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 2px;
+  }
+  .error-container .error-content-first h1 {
+    width: auto;
+  }
+  .error-container .error-content-first .error-404-content {
+    width: 30%;
+  }
+  .error-container .error-content-first .page-not-found {
+    font-size: 22px;
+  }
+  .error-container .exclamation-content {
+    margin: 1rem 0 0 50%;
+  }
+  .error-container .error-content-second h2 {
+    font-size: 18px;
+  }
+  .error-container .error-content-second .error-reason {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .error-container .exit-btns-from-error-page {
+    width: 100%;
+    margin-left: 0;
+  }
+  .sentiment-analyze-card {
+    margin: 0;
+  }
+  .sentiment-analyze-card a {
+    margin: 10% 0 10% 7%;
+  }
+}/*# sourceMappingURL=LMobile.css.map */

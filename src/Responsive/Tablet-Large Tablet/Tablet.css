@@ -1,0 +1,474 @@
+@media (max-width: 992px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: 0;
+    outline: 0;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  a {
+    color: black;
+  }
+  .portal-header {
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    border-bottom: 1px solid #dedede;
+    background-color: white;
+  }
+  .portal-header a {
+    width: auto;
+    height: auto;
+  }
+  .portal-header a .glomil-logo {
+    width: 100px;
+    height: 50px;
+    margin-top: 2rem;
+    cursor: pointer;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .portal-header .main-contents {
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 0;
+    font-size: 1rem;
+  }
+  .portal-header .main-contents :hover {
+    text-decoration: underline;
+  }
+  .portal-header .searchbox {
+    margin-top: 2.5rem;
+    width: 100%;
+    height: 2.5rem;
+    position: relative;
+    margin-left: 5px;
+  }
+  .portal-header .searchbox .search-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 7px;
+    left: 5px;
+    color: grey;
+  }
+  .portal-header .searchbox input {
+    border: 2px solid gainsboro;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    padding: 5px 0 5px 30px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .portal-header .searchbox .searchbox-info {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    gap: 5px;
+    margin-bottom: 0.5rem;
+    background-color: #dedede;
+  }
+  .portal-header .searchbox .searchbox-info button {
+    width: auto;
+    height: auto;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 20px;
+  }
+  .portal-header .searchbox .searchbox-info button :hover {
+    background-color: #dedede;
+  }
+  .portal-header .user-contents {
+    margin-left: 1rem;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .portal-header .user-contents .bell-icon {
+    width: 20px;
+    height: 20px;
+    color: rgb(0, 50, 100);
+    opacity: 0.7;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  .portal-header .user-contents .bell-icon :hover {
+    opacity: 1;
+    color: blue;
+  }
+  .portal-header .user-contents .help-icon {
+    width: 20px;
+    height: 20px;
+    color: rgb(0, 50, 100);
+    opacity: 0.7;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  .portal-header .user-contents .help-icon :hover {
+    opacity: 1;
+    color: blue;
+  }
+  .portal-header .user-contents .settings-icon {
+    width: 20px;
+    height: 20px;
+    color: rgb(0, 50, 100);
+    opacity: 0.7;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  .portal-header .user-contents .settings-icon :hover {
+    opacity: 1;
+    color: blue;
+  }
+  .portal-header .user-contents .user-log {
+    display: inline-block;
+    bottom: 5px;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(79, 121, 149);
+    border-radius: 50%;
+    opacity: 0.5;
+    position: relative;
+    cursor: pointer;
+  }
+  .portal-header .user-contents .user-log .user-active-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    background-color: rgb(0, 169, 0);
+    border-radius: 50%;
+    bottom: 1px;
+    right: 1px;
+  }
+  .portal-header .user-contents .user-log .user-icon {
+    width: 20px;
+    height: 20px;
+    color: white;
+    margin-left: 6px;
+    margin-top: 6px;
+  }
+  .portal-header .user-contents .user-info {
+    width: auto;
+    height: 3rem;
+    margin-left: 1rem;
+  }
+  .portal-header .user-contents .user-info .username {
+    cursor: pointer;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    opacity: 0.7;
+  }
+  .portal-header .user-contents .user-info .user-mail {
+    width: auto;
+    height: 1.5rem;
+    margin-top: 5px;
+    cursor: pointer;
+    color: rgb(75, 115, 135);
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .welcome-to-portal-content {
+    width: auto;
+    height: 400px;
+    background-color: #172B4E;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .welcome-to-portal-content .welcome-to-portal-image {
+    width: 25%;
+    height: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    flex-grow: 1;
+  }
+  .welcome-to-portal-content .portal-entry {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: auto;
+    margin-left: 10%;
+  }
+  .welcome-to-portal-content .portal-entry .welcome-to-portal {
+    width: 75%;
+    height: auto;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+  }
+  .welcome-to-portal-content .portal-entry .portal-info {
+    width: 60%;
+    height: auto;
+    font-size: 1rem;
+    color: white;
+    line-height: 1.2;
+  }
+  .welcome-to-portal-content .welcome-button-content {
+    width: 40%;
+    height: 3rem;
+    margin-top: 1rem;
+  }
+  .welcome-to-portal-content .welcome-button-content button {
+    width: 100%;
+    height: 2.5rem;
+    cursor: pointer;
+    background-color: rgb(14, 114, 255);
+    border-radius: 2px;
+    color: white;
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .portal-live-products-content .portal-live-boxes {
+    width: 40%;
+  }
+  .sidebar {
+    padding-right: 0;
+  }
+  .sidebar .sidebar-title {
+    margin-left: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 16px;
+  }
+  .sidebar .sidebar-container {
+    margin-left: 0;
+  }
+  .sidebar .sidebar-container .sidebar-info {
+    margin-bottom: 0.5rem;
+  }
+  .sidebar .sidebar-container .sidebar-info div .monitor-icon {
+    margin-top: 4px;
+  }
+  .sidebar .sidebar-container .sidebar-info div .menu-icon {
+    margin-top: 4px;
+  }
+  .sidebar .sidebar-container .sidebar-info .service-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 5px;
+  }
+  .sidebar .sidebar-container svg {
+    width: 3rem;
+    height: 1.5rem;
+  }
+  .sentiment-container .sentiment-bots-info h1 {
+    font-size: 1.5rem;
+  }
+  .sentiment-container .sentiment-bots-info p {
+    margin-top: 1.5rem;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .query-field {
+    margin-left: 2rem;
+    margin-top: 2rem;
+    /*    .toastify-container{
+        svg{
+            width: 2rem;
+            height: 2rem;
+            top: 1rem;
+            right: 1rem;
+        }
+    } */
+  }
+  .query-field h1 {
+    font-size: 1.5rem;
+  }
+  .query-field .text-query-field input {
+    width: 50%;
+    height: 3.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 0.5rem;
+  }
+  .query-field .text-query-field .query-btn {
+    width: 25%;
+    height: 2rem;
+    font-size: 16px;
+  }
+  .query-field .query-result {
+    height: 3rem;
+    margin-top: 1rem;
+  }
+  .query-field .query-result .query-true-field {
+    width: 1rem;
+    height: 1rem;
+  }
+  .query-field .query-result .query-true-field .true-icon {
+    width: 12px;
+    height: 12px;
+  }
+  .bots-container .sentiment-bots-info {
+    margin-left: 2rem;
+  }
+  .bots-container .sentiment-bots-info h1 {
+    font-size: 24px;
+  }
+  .bots-container .sentiment-bots-info p {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .algorithm-field-info {
+    margin-top: 1.5rem;
+  }
+  .algorithm-field-info h1 {
+    font-size: 1.5rem;
+  }
+  .algorithm-field {
+    margin-left: 1.5rem;
+  }
+  .algorithm-field div .user-algorithm {
+    padding-right: 2rem;
+  }
+  .algorithm-field div .user-algorithm .bot-user-algorithm select {
+    height: 2.5rem;
+    font-size: 14px;
+  }
+  .algorithm-field div .user-algorithm .bot-user-algorithm select option {
+    font-size: 12px;
+  }
+  .algorithm-field div .user-algorithm .user-count-container div {
+    margin-top: 0.5rem;
+  }
+  .algorithm-field div .user-algorithm .user-count-container div input {
+    font-size: 14px;
+  }
+  .algorithm-field div .user-algorithm .user-count-container .algorithm-btn-content {
+    width: 60%;
+  }
+  .algorithm-field div .user-algorithm .user-count-container .algorithm-btn-content .algorithm-btn {
+    width: 100%;
+    height: 1.5rem;
+    font-size: 14px;
+  }
+  .algorithm-field div .algorithm-result {
+    margin-left: 1rem;
+  }
+  .algorithm-field div .algorithm-result h1 {
+    font-size: 20px;
+  }
+  .algorithm-field div .algorithm-result .algorithm-result-box .algorithm-true-field {
+    top: 12px;
+    left: 12px;
+  }
+  .algorithm-field div .algorithm-result .algorithm-result-box .algorithm-true-field .true-icon {
+    margin-top: 2px;
+    margin-left: 0;
+  }
+  .algorithm-field div .algorithm-result .algorithm-result-box .algorithm-result-text-box {
+    margin-right: 10%;
+  }
+  .algorithm-field div .algorithm-result .algorithm-result-box .algorithm-result-text-box .algorithm-result-text {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .algorithm-field div .algorithm-result .algorithm-result-box .algorithm-result-text-box .algorithm-ratio {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .services-container h1 {
+    width: 75%;
+  }
+  .services-container p {
+    width: 75%;
+  }
+  .services-content .service-cards-content {
+    margin-left: 5%;
+  }
+  .services-content .service-cards-content .service-cards {
+    width: 10rem !important;
+    height: 20rem !important;
+  }
+  .services-content .service-cards-content .service-cards .service-cards-image {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+  }
+  .services-content .service-cards-content .service-cards .service-cards-image svg {
+    margin-left: 10px;
+    margin-top: 0.5rem;
+  }
+  .services-content .service-cards-content .service-cards .service-cards-header {
+    top: 22%;
+    left: 1rem;
+    font-size: 18px;
+  }
+  .services-content .service-cards-content .service-cards .service-cards-message {
+    font-size: 15px;
+    width: 75%;
+    top: 45%;
+    left: 1rem;
+  }
+  .services-content .service-cards-content .service-cards .service-cards-btn {
+    bottom: 1rem;
+    left: 1rem;
+    width: 75%;
+    height: 2rem;
+  }
+  .breadcrumb-content {
+    margin-top: 20%;
+  }
+  .breadcrumb-content a .breadcrumb-home-icon {
+    width: 1rem;
+    height: 1rem;
+  }
+  .breadcrumb-content a .breadcrumb {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .breadcrumb-content a .split-breadcrumbs {
+    font-size: 18px;
+  }
+  .error-container .error-content-first .error-404-content {
+    width: 20%;
+  }
+  .error-container .error-content-first .error-404-content .error-404 {
+    margin-left: 0;
+  }
+  .error-container .error-content-first .page-not-found {
+    width: 100%;
+    margin: 1rem 0 auto 5%;
+    font-size: 23px;
+  }
+  .error-container .error-content-second h2 {
+    font-size: 20px;
+  }
+  .error-container .error-content-second .error-reason {
+    font-size: 18px;
+    margin-left: 0.5rem;
+  }
+  .error-container .exit-btns-from-error-page {
+    margin: 2rem 0 0 1rem;
+  }
+  .error-container .exit-btns-from-error-page .go-back-btn .go-back-icon {
+    width: 20px;
+    height: 20px;
+    bottom: 9px;
+    left: 5px;
+  }
+  .error-container .exit-btns-from-error-page .go-to-home-page-btn {
+    width: 60%;
+  }
+  .error-container .exit-btns-from-error-page .go-to-home-page-btn .go-to-home-page-icon {
+    width: 1.5rem;
+    height: 1rem;
+    left: 4px;
+  }
+}/*# sourceMappingURL=Tablet.css.map */

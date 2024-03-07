@@ -1,0 +1,444 @@
+@media (max-width: 1440px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: 0;
+    outline: 0;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  a {
+    color: black;
+  }
+  .portal-header {
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    border-bottom: 1px solid #dedede;
+    background-color: white;
+  }
+  .portal-header a {
+    width: auto;
+    height: auto;
+  }
+  .portal-header a .glomil-logo {
+    margin-top: 0.5rem;
+    width: 150px;
+    height: 100px;
+    cursor: pointer;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .portal-header .main-contents {
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    font-size: 1rem;
+  }
+  .portal-header .main-contents :hover {
+    text-decoration: underline;
+  }
+  .portal-header .main-contents a {
+    margin-left: 2rem;
+  }
+  .portal-header .searchbox {
+    margin-top: 2.5rem;
+    width: 50%;
+    height: 2.5rem;
+    position: relative;
+    margin-left: 5%;
+  }
+  .portal-header .searchbox .search-icon {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 4px;
+    left: 10px;
+    color: grey;
+  }
+  .portal-header .searchbox input {
+    border: 2px solid gainsboro;
+    border-radius: 5px;
+    width: 100%;
+    height: 2rem;
+    padding: 5px 0 5px 3rem;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .portal-header .searchbox .searchbox-info {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    gap: 5px;
+    margin-bottom: 0.5rem;
+    background-color: #dedede;
+  }
+  .portal-header .searchbox .searchbox-info button {
+    width: auto;
+    height: auto;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  .portal-header .searchbox .searchbox-info button :hover {
+    background-color: #dedede;
+  }
+  .portal-header .user-contents {
+    margin-left: 4rem;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .portal-header .user-contents .bell-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: rgb(0, 50, 100);
+    opacity: 0.7;
+    margin-right: 1.5rem;
+    cursor: pointer;
+  }
+  .portal-header .user-contents .bell-icon :hover {
+    opacity: 1;
+    color: blue;
+  }
+  .portal-header .user-contents .help-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: rgb(0, 50, 100);
+    opacity: 0.7;
+    margin-right: 1.5rem;
+    cursor: pointer;
+  }
+  .portal-header .user-contents .help-icon :hover {
+    opacity: 1;
+    color: blue;
+  }
+  .portal-header .user-contents .settings-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: rgb(0, 50, 100);
+    opacity: 0.7;
+    margin-right: 1.5rem;
+    cursor: pointer;
+  }
+  .portal-header .user-contents .settings-icon :hover {
+    opacity: 1;
+    color: blue;
+  }
+  .portal-header .user-contents .user-log {
+    bottom: 5px;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: rgb(79, 121, 149);
+    border-radius: 50%;
+    opacity: 0.5;
+    position: relative;
+    cursor: pointer;
+  }
+  .portal-header .user-contents .user-log .user-active-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    background-color: rgb(0, 169, 0);
+    border-radius: 50%;
+    bottom: 2px;
+    right: 1px;
+  }
+  .portal-header .user-contents .user-log .user-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: white;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .portal-header .user-contents .user-info {
+    width: auto;
+    height: 3rem;
+    margin-left: 1rem;
+  }
+  .portal-header .user-contents .user-info .username {
+    cursor: pointer;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    opacity: 0.7;
+  }
+  .portal-header .user-contents .user-info .user-mail {
+    width: auto;
+    height: 1.5rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    color: rgb(75, 115, 135);
+    font-weight: 500;
+    font-size: 15px;
+    margin-right: 0.5rem;
+  }
+  .welcome-to-portal-content {
+    width: auto;
+    height: 400px;
+    background-color: #172B4E;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .welcome-to-portal-content .welcome-to-portal-image {
+    width: 25%;
+    height: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    flex-grow: 1;
+  }
+  .welcome-to-portal-content .portal-entry {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: auto;
+    margin-left: 10%;
+  }
+  .welcome-to-portal-content .portal-entry .welcome-to-portal {
+    width: 75%;
+    height: auto;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+  }
+  .welcome-to-portal-content .portal-entry .portal-info {
+    width: 60%;
+    height: auto;
+    font-size: 1rem;
+    color: white;
+    line-height: 1.2;
+  }
+  .welcome-to-portal-content .welcome-button-content {
+    width: 30%;
+    height: 3rem;
+    margin-top: 1rem;
+  }
+  .welcome-to-portal-content .welcome-button-content button {
+    width: 100%;
+    height: 2.5rem;
+    cursor: pointer;
+    background-color: rgb(14, 114, 255);
+    border-radius: 2px;
+    color: white;
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .portal-live-products-content .portal-live-boxes .portal-live-box {
+    border: 1px solid black;
+  }
+  .portal-services-content .portal-services .service-cards-content {
+    margin-left: 12%;
+  }
+  .portal-services-content .portal-services .service-cards-content .sentiment-live {
+    width: auto;
+    height: auto;
+    position: relative;
+  }
+  .portal-services-content .portal-services .service-cards-content .bots-live {
+    width: auto;
+    height: auto;
+  }
+  .footer-content span {
+    font-size: 1rem;
+  }
+  .footer-content a {
+    font-size: 1rem;
+  }
+  .sidebar .sidebar-title {
+    margin-left: 2rem;
+  }
+  .sidebar .sidebar-container {
+    margin-left: 2rem;
+  }
+  .sidebar .sidebar-container .sidebar-info div .monitor-icon {
+    margin-top: 8px;
+  }
+  .sidebar .sidebar-container .sidebar-info div .menu-icon {
+    margin-top: 10px;
+  }
+  .sidebar .sidebar-container svg {
+    width: 2.5rem;
+    height: 1.5rem;
+    margin-top: 7px;
+  }
+  .services-container h1 {
+    width: 40%;
+  }
+  .services-container p {
+    width: 40%;
+  }
+  .sentiment-container .sentiment-bots-info {
+    margin-left: 3rem;
+  }
+  .sentiment-container .sentiment-bots-info h1 {
+    width: auto;
+    height: auto;
+    margin-top: 1.5rem;
+    color: #000F34;
+  }
+  .sentiment-container .sentiment-bots-info p {
+    width: auto;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+  }
+  .query-field {
+    margin-top: 4rem;
+    margin-left: 3rem;
+    /*    .toastify-container{
+        svg{
+            width: 2rem;
+            height: 2rem;
+            top: 1rem;
+            right: 1rem;
+        }
+    } */
+  }
+  .query-field .text-query-field input {
+    height: 4rem;
+    padding-bottom: 1.5rem;
+  }
+  .query-field .text-query-field .query-btn {
+    width: 15%;
+    height: 35px;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .query-field .query-result {
+    height: 4rem;
+  }
+  .query-field .query-result .query-true-field {
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 0.5rem;
+    left: 1rem;
+  }
+  .query-field .query-result .query-true-field .true-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    margin-left: 2px;
+  }
+  .bots-container .sentiment-bots-info {
+    margin-left: 3rem;
+  }
+  .bots-container .sentiment-bots-info p {
+    margin-top: 1.5rem;
+  }
+  .algorithm-field-info {
+    margin-top: 2.5rem;
+  }
+  .algorithm-field-info label {
+    margin-top: 1rem;
+  }
+  .algorithm-field {
+    margin-left: 3rem;
+  }
+  .algorithm-field div .user-algorithm {
+    padding-right: 2rem;
+  }
+  .algorithm-field div .user-algorithm .bot-user-algorithm select {
+    height: 3rem;
+    font-size: 18px;
+  }
+  .algorithm-field div .user-algorithm .bot-user-algorithm select option {
+    font-size: 16px;
+  }
+  .algorithm-field div .user-algorithm .user-count-container div {
+    height: 2.5rem;
+    margin-top: 0.5rem;
+  }
+  .algorithm-field div .user-algorithm .user-count-container .algorithm-btn-content {
+    width: 40%;
+    height: auto;
+  }
+  .algorithm-field div .user-algorithm .user-count-container .algorithm-btn-content .algorithm-btn {
+    height: 35px;
+    font-size: 18px;
+  }
+  .algorithm-field div .algorithm-result h1 {
+    font-size: 1.5rem;
+  }
+  .algorithm-field div .algorithm-result .algorithm-result-box .algorithm-true-field {
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 1rem;
+    left: 1rem;
+  }
+  .algorithm-field div .algorithm-result .algorithm-result-box .algorithm-true-field .true-icon {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    margin-left: 0;
+  }
+  .algorithm-field div .algorithm-result .algorithm-result-box .algorithm-result-text-box {
+    margin-top: 1rem;
+    margin-right: 20%;
+  }
+  .algorithm-field div .algorithm-result .algorithm-result-box .algorithm-result-text-box .algorithm-result-text {
+    font-size: 18px;
+  }
+  .algorithm-field div .algorithm-result .algorithm-result-box .algorithm-result-text-box .algorithm-ratio {
+    font-size: 18px;
+  }
+  .services-content .service-cards-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services-content .service-cards-content .sentiment-card {
+    width: 75%;
+  }
+  .services-content .service-cards-content .bots-card {
+    width: 75%;
+  }
+  .error-container .error-content-first {
+    width: 50%;
+    height: 20%;
+    margin: auto;
+  }
+  .error-container .error-content-first .error-404-content {
+    width: 15%;
+  }
+  .error-container .error-content-first .error-404-content .error-404 {
+    margin-left: 2px;
+  }
+  .error-container .error-content-first .page-not-found {
+    width: 75%;
+    margin: 1rem 5% auto auto;
+    font-size: 24px;
+  }
+  .error-container .error-content-second {
+    width: 50%;
+    height: 20%;
+    margin: 1rem 30% auto;
+  }
+  .error-container .error-content-second h2 {
+    font-size: 22px;
+  }
+  .error-container .error-content-second .error-reason {
+    font-size: 18px;
+    margin-left: 1rem;
+  }
+  .error-container .exit-btns-from-error-page {
+    width: 75%;
+    margin: 2rem 3% auto;
+  }
+}/*# sourceMappingURL=Desktop.css.map */

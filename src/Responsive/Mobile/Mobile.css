@@ -1,0 +1,812 @@
+@media (max-width: 576px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: 0;
+    outline: 0;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  a {
+    color: black;
+  }
+  .portal-header {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    border-bottom: 1px solid #dedede;
+    background-color: white;
+  }
+  .portal-header a {
+    width: auto;
+    height: auto;
+  }
+  .portal-header a .glomil-logo {
+    margin-top: 0;
+    width: 75px;
+    height: 60px;
+    cursor: pointer;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .portal-header .searchbox {
+    margin-top: 20px;
+    width: 4.5rem;
+    height: 20px;
+    position: relative;
+    margin-left: 5%;
+  }
+  .portal-header .searchbox .search-icon {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 6px;
+    left: 5px;
+    color: grey;
+  }
+  .portal-header .searchbox input {
+    border: 2px solid gainsboro;
+    border-radius: 5px;
+    width: 100%;
+    height: 20px;
+    padding: 5px 0 5px 18px;
+    font-size: 11px;
+    cursor: pointer;
+  }
+  .portal-header .searchbox .searchbox-info {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1px;
+    gap: 1px;
+    margin-bottom: 0;
+    background-color: #dedede;
+  }
+  .portal-header .searchbox .searchbox-info a {
+    text-align: center;
+  }
+  .portal-header .searchbox .searchbox-info a button {
+    width: 100%;
+    height: auto;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  .portal-header .searchbox .searchbox-info a button :hover {
+    background-color: #dedede;
+  }
+  .portal-header .user-buttons {
+    margin-top: 0;
+    margin-left: 10px;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .portal-header .user-buttons .bell-icon {
+    width: 14px;
+    height: 14px;
+    color: rgb(0, 50, 100);
+    opacity: 0.7;
+    margin-right: 0.5rem;
+    cursor: pointer;
+  }
+  .portal-header .user-buttons .bell-icon :hover {
+    opacity: 1;
+    color: blue;
+  }
+  .portal-header .user-buttons .help-icon {
+    width: 14px;
+    height: 14px;
+    color: rgb(0, 50, 100);
+    opacity: 0.7;
+    margin-right: 0.5rem;
+    cursor: pointer;
+  }
+  .portal-header .user-buttons .help-icon :hover {
+    opacity: 1;
+    color: blue;
+  }
+  .portal-header .user-buttons .settings-icon {
+    width: 14px;
+    height: 14px;
+    color: rgb(0, 50, 100);
+    opacity: 0.7;
+    margin-right: 0.5rem;
+    cursor: pointer;
+  }
+  .portal-header .user-buttons .settings-icon :hover {
+    opacity: 1;
+    color: blue;
+  }
+  .portal-header .user-buttons .user-log {
+    bottom: 5px;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(79, 121, 149);
+    border-radius: 50%;
+    opacity: 0.5;
+    position: relative;
+    cursor: pointer;
+  }
+  .portal-header .user-buttons .user-log .user-active-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    background-color: rgb(0, 169, 0);
+    border-radius: 50%;
+    bottom: 1px;
+    right: 1px;
+  }
+  .portal-header .user-buttons .user-log .user-icon {
+    width: 20px;
+    height: 20px;
+    color: white;
+    margin-left: 6px;
+    margin-top: 5px;
+  }
+  .portal-header .user-buttons .user-info {
+    width: auto;
+    height: 3rem;
+    margin-left: 1rem;
+  }
+  .portal-header .user-buttons .user-info .username {
+    cursor: pointer;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    opacity: 0.7;
+  }
+  .portal-header .user-buttons .user-info .user-mail {
+    width: auto;
+    height: 1.5rem;
+    margin-top: 5px;
+    cursor: pointer;
+    color: rgb(75, 115, 135);
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .mobile-modal {
+    max-width: 275px;
+    background: rgba(222, 222, 222, 0.8);
+    box-shadow: 5px 5px 25px 25px #172B4E;
+    padding: 5px;
+    position: relative;
+    right: 0;
+  }
+  .mobile-modal .close-modal-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: azure;
+  }
+  .mobile-modal .close-modal-btn svg {
+    height: 20px;
+    width: 20px;
+    color: rgb(179, 35, 35);
+  }
+  .mobile-modal .main-contents {
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    margin-top: 3rem;
+    margin-left: 0;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+  .mobile-modal .main-contents :hover {
+    text-decoration: underline;
+  }
+  .mobile-modal .main-contents :first-child {
+    display: inline-block;
+    margin-left: 0;
+  }
+  .mobile-modal .main-contents a {
+    color: #145E8C;
+    margin-left: 1rem;
+  }
+  .mobile-modal .user-contents {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile-modal .user-contents .user-log {
+    display: inline-block;
+    bottom: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: rgb(79, 121, 149);
+    border-radius: 50%;
+    opacity: 0.5;
+    position: relative;
+    cursor: pointer;
+  }
+  .mobile-modal .user-contents .user-log .user-active-dot {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: rgb(0, 169, 0);
+    border-radius: 50%;
+    bottom: 2px;
+    right: 1px;
+  }
+  .mobile-modal .user-contents .user-log .user-icon {
+    width: 24px;
+    height: 24px;
+    color: white;
+    margin-left: 8px;
+    margin-top: 7px;
+  }
+  .mobile-modal .user-contents .user-info {
+    width: auto;
+    height: 3rem;
+    margin-left: 1rem;
+  }
+  .mobile-modal .user-contents .user-info .username {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    opacity: 0.7;
+    margin-top: 0.5rem;
+  }
+  .mobile-modal .user-contents .user-info .user-mail {
+    width: auto;
+    height: 1.5rem;
+    margin-top: 0;
+    cursor: pointer;
+    color: rgb(75, 115, 135);
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .mobile-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  .welcome-to-portal-content {
+    width: auto;
+    height: 400px;
+    background-color: #172B4E;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .welcome-to-portal-content .welcome-to-portal-image {
+    width: 25%;
+    height: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    flex-grow: 1;
+  }
+  .welcome-to-portal-content .portal-entry {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: auto;
+    margin-left: 10%;
+  }
+  .welcome-to-portal-content .portal-entry .welcome-to-portal {
+    width: 75%;
+    height: auto;
+    margin-bottom: 0.5rem;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+  }
+  .welcome-to-portal-content .portal-entry .portal-info {
+    width: 60%;
+    height: auto;
+    font-size: 11px;
+    color: white;
+    line-height: 1.2;
+  }
+  .welcome-to-portal-content .welcome-button-content {
+    width: 60%;
+    height: 25px;
+    margin-top: 0.5rem;
+  }
+  .welcome-to-portal-content .welcome-button-content button {
+    width: 100%;
+    height: 25px;
+    cursor: pointer;
+    background-color: rgb(14, 114, 255);
+    border-radius: 2px;
+    color: white;
+    margin-top: 0;
+    font-size: 10px;
+    font-weight: 600;
+  }
+  .portal-live-products-content .portal-live-products-header {
+    font-size: 1.5rem;
+  }
+  .portal-live-products-content .portal-live-products-info {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+  .portal-services-content .portal-services p {
+    width: auto;
+    font-size: 16px;
+    margin-left: 2rem;
+  }
+  .portal-services-content .portal-services h2 {
+    padding-left: 10%;
+    font-size: 1.5rem;
+  }
+  .portal-services-content .portal-services .service-cards-content {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 10%;
+  }
+  .portal-services-content .portal-services .service-cards-content .service-cards {
+    height: 10rem !important;
+  }
+  .portal-services-content .portal-services .service-cards-content .service-cards .service-cards-image {
+    margin-top: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  .portal-services-content .portal-services .service-cards-content .service-cards .service-cards-image svg {
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+  }
+  .portal-services-content .portal-services .service-cards-content .service-cards .service-cards-header {
+    top: 30%;
+    padding-top: 0;
+    padding-left: 0;
+    left: 24px;
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    color: #172B4E;
+    font-weight: 600;
+    margin-left: 0;
+  }
+  .portal-services-content .portal-services .service-cards-content .service-cards .service-cards-message {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    color: #5B6981;
+    top: 3.5rem;
+    font-size: 12px;
+    left: 1.5rem;
+    margin-left: 0;
+  }
+  .portal-services-content .portal-services .service-cards-content .service-cards .service-cards-btn {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1.4rem;
+    width: 40%;
+    height: 1.5rem;
+    cursor: pointer;
+    color: #55637C;
+    border-radius: 3px;
+    font-size: 14px;
+    background-color: #e2e2e2;
+  }
+  .portal-services-content .portal-services .service-cards-content .sentiment-live {
+    width: 50%;
+    height: auto;
+    position: relative;
+  }
+  .portal-services-content .portal-services .service-cards-content .bots-live {
+    width: 50%;
+    height: auto;
+  }
+  .footer-content {
+    margin-top: 2rem;
+  }
+  .footer-content span {
+    font-size: 12px;
+  }
+  .footer-content a {
+    font-size: 12px;
+  }
+  .sidebar {
+    width: auto;
+    padding-right: 0;
+    border-right: none;
+    border-bottom: 1px solid #b9b9b9;
+    margin-top: 3rem;
+  }
+  .sidebar .sidebar-title {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 1rem;
+    margin-left: 0;
+  }
+  .sidebar .sidebar-container {
+    text-align: center;
+    margin-left: 0;
+  }
+  .sidebar .sidebar-container .sidebar-info {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  .sidebar .sidebar-container .sidebar-info div {
+    margin-bottom: 0.5rem;
+  }
+  .sidebar .sidebar-container .sidebar-info div .monitor-icon {
+    margin-top: 10px;
+  }
+  .sidebar .sidebar-container .sidebar-info div .menu-icon {
+    margin-top: 10px;
+  }
+  .sidebar .sidebar-container .sidebar-info .service-title {
+    margin-top: 9px;
+    margin-left: 8px;
+    font-size: 12px;
+  }
+  .sidebar .sidebar-container svg {
+    width: 1rem;
+    height: 1rem;
+    margin-top: 10px;
+  }
+  .services-container {
+    margin-left: 0.5rem;
+  }
+  .services-container div {
+    width: auto;
+  }
+  .services-container div a span {
+    font-size: 12px;
+    margin-left: 3px;
+  }
+  .services-container div a .split-breadcrumbs {
+    font-size: 11px;
+    margin-left: 3px;
+  }
+  .services-container div a .breadcrumb-home-icon {
+    width: 14px;
+    height: 14px;
+  }
+  .services-container h1 {
+    width: 100%;
+    font-size: 21px;
+  }
+  .services-container p {
+    width: 100%;
+    font-size: 14px;
+    margin-top: 1rem;
+  }
+  .services-container div {
+    margin-top: 0.5rem;
+    gap: 3px;
+  }
+  .services-container div a {
+    font-size: 16px;
+  }
+  .services-container div span {
+    margin-top: 3px;
+  }
+  .services-container div span .service-arrow {
+    width: 12px;
+    height: 12px;
+  }
+  .services-content {
+    margin-left: 35%;
+  }
+  .services-content .service-cards-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    text-align: center;
+    margin-left: 0;
+  }
+  .services-content .service-cards-content .bots-card {
+    width: 75%;
+  }
+  .services-content .service-cards-content .service-cards .service-cards-image {
+    margin-left: 3rem;
+    margin-top: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3px;
+  }
+  .services-content .service-cards-content .service-cards .service-cards-image svg {
+    margin-left: 0;
+    margin-right: 2px;
+    margin-top: 0.5rem;
+  }
+  .services-content .service-cards-content .service-cards .service-cards-header {
+    top: 22%;
+    left: 1rem;
+    font-size: 20px;
+  }
+  .services-content .service-cards-content .service-cards .service-cards-message {
+    font-size: 15px;
+    top: 45%;
+    left: 1rem;
+  }
+  .services-content .service-cards-content .service-cards .service-cards-btn {
+    bottom: 1rem;
+    left: 1rem;
+    width: 75%;
+    height: 2rem;
+  }
+  .sentiment-container {
+    margin-left: 10%;
+  }
+  .sentiment-container .sentiment-bots-info {
+    margin-left: 0;
+  }
+  .sentiment-container .sentiment-bots-info h1 {
+    font-size: 21px;
+    margin-top: 1rem;
+  }
+  .sentiment-container .sentiment-bots-info p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .query-field {
+    margin-left: 10%;
+    margin-top: 1rem;
+    /*    .toastify-container{
+        svg{
+            width: 2rem;
+            height: 2rem;
+            top: 1rem;
+            right: 1rem;
+        }
+    } */
+  }
+  .query-field h1 {
+    font-size: 21px;
+  }
+  .query-field .text-query-field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  .query-field .text-query-field input {
+    width: 75%;
+    height: 2.5rem;
+    padding-bottom: 1rem;
+    padding-left: 3px;
+    font-size: 10px;
+  }
+  .query-field .text-query-field .query-btn {
+    width: 50%;
+    height: 1.5rem;
+    font-size: 10px;
+    margin-left: 0;
+  }
+  .query-field .query-result {
+    width: 50%;
+    height: 2rem;
+    margin-top: 1rem;
+  }
+  .query-field .query-result .query-true-field {
+    width: 12px;
+    height: 12px;
+    top: 5px;
+    left: 5px;
+  }
+  .query-field .query-result .query-true-field .true-icon {
+    width: 10px;
+    height: 10px;
+    margin-top: 1px;
+    margin-left: 1px;
+  }
+  .bots-container {
+    margin-left: 1.5rem;
+  }
+  .bots-container .sentiment-bots-info {
+    margin-left: 0;
+  }
+  .bots-container .sentiment-bots-info h1 {
+    font-size: 21px;
+  }
+  .bots-container .sentiment-bots-info p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-left: 2px;
+  }
+  .algorithm-field-info {
+    margin-left: 12%;
+    margin-top: 2rem;
+  }
+  .algorithm-field-info h1 {
+    font-size: 20px;
+  }
+  .algorithm-field-info label {
+    margin-top: 0.5rem;
+  }
+  .algorithm-field {
+    margin-left: 12%;
+    width: 100%;
+  }
+  .algorithm-field div {
+    display: flex;
+    flex-direction: column;
+  }
+  .algorithm-field div .user-algorithm {
+    width: 75%;
+    border-right: none;
+    border-bottom: 1px solid #b9b9b9;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+  .algorithm-field div .user-algorithm .bot-user-algorithm {
+    padding-bottom: 1rem;
+  }
+  .algorithm-field div .user-algorithm .bot-user-algorithm select {
+    letter-spacing: 0.3px;
+  }
+  .algorithm-field div .user-algorithm .bot-user-algorithm select option {
+    font-size: 12px;
+  }
+  .algorithm-field div .user-algorithm .user-count-container div input {
+    font-size: 14px;
+    padding-bottom: 5px;
+  }
+  .algorithm-field div .user-algorithm .user-count-container .algorithm-btn-content .algorithm-btn {
+    font-size: 12px;
+  }
+  .algorithm-field div .algorithm-result {
+    margin-left: 0;
+  }
+  .algorithm-field div .algorithm-result h1 {
+    font-size: 16px;
+  }
+  .algorithm-field div .algorithm-result .algorithm-result-box {
+    margin-top: 12px;
+  }
+  .algorithm-field div .algorithm-result .algorithm-result-box .algorithm-true-field {
+    width: 1rem;
+    height: 1rem;
+    top: 10px;
+  }
+  .algorithm-field div .algorithm-result .algorithm-result-box .algorithm-true-field .true-icon {
+    width: 14px;
+    height: 14px;
+    margin-top: 1px;
+    margin-left: 0;
+  }
+  .algorithm-field div .algorithm-result .algorithm-result-box .algorithm-result-text-box {
+    margin-top: 12px;
+    margin-left: 1rem;
+  }
+  .algorithm-field div .algorithm-result .algorithm-result-box .algorithm-result-text-box .algorithm-result-text {
+    font-size: 12px;
+    padding-left: 20px;
+  }
+  .algorithm-field div .algorithm-result .algorithm-result-box .algorithm-result-text-box .algorithm-ratio {
+    margin-bottom: 0.5rem;
+    padding-left: 20px;
+    font-size: 12px;
+  }
+  .breadcrumb-content {
+    width: 100%;
+    text-align: center;
+    margin-top: 20%;
+  }
+  .breadcrumb-content a .breadcrumb {
+    font-size: 10px;
+    margin-left: 0;
+  }
+  .breadcrumb-content a .split-breadcrumbs {
+    font-size: 12px;
+  }
+  .breadcrumb-content a .breadcrumb-home-icon {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+  }
+  .error-container .error-image {
+    margin-left: 0;
+  }
+  .error-container .error-image img {
+    width: 250px;
+    height: 100px;
+  }
+  .error-container .error-content-first {
+    width: auto;
+    height: auto;
+  }
+  .error-container .error-content-first .error-404-content {
+    width: 30%;
+  }
+  .error-container .error-content-first .page-not-found {
+    width: auto;
+    margin-left: 2.5rem;
+    height: auto;
+    font-size: 14px;
+  }
+  .error-container .exclamation-content {
+    margin: 1rem 0 0 40%;
+  }
+  .error-container .error-content-second {
+    margin: 1rem 0 0 0;
+    width: auto;
+  }
+  .error-container .error-content-second h2 {
+    font-size: 17px;
+  }
+  .error-container .error-content-second .error-reason {
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  .error-container .exit-btns-from-error-page .go-back-btn {
+    font-size: 15px;
+  }
+  .error-container .exit-btns-from-error-page .go-to-home-page-btn {
+    font-size: 15px;
+  }
+  .sentiment-analyze-card {
+    margin: 12% 10% 10% 15%;
+    text-align: center;
+  }
+  .sentiment-analyze-card a {
+    margin: 0;
+  }
+  .sentiment-analyze-card a .service-cards {
+    width: 10rem !important;
+    height: 20rem !important;
+  }
+  .sentiment-analyze-card a .service-cards .service-cards-image {
+    margin-left: 30%;
+    margin-top: 1rem;
+    width: 3rem;
+    height: 3rem;
+  }
+  .sentiment-analyze-card a .service-cards .service-cards-image svg {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .sentiment-analyze-card a .service-cards .service-cards-header {
+    top: 25%;
+    left: 0;
+    font-size: 1rem;
+  }
+  .sentiment-analyze-card a .service-cards .service-cards-message {
+    width: 75%;
+    top: 45%;
+    left: 1rem;
+    font-size: 14px;
+  }
+  .sentiment-analyze-card a .service-cards .service-cards-btn {
+    bottom: 1rem;
+    left: 20px;
+    width: 75%;
+    height: 2rem;
+    font-size: 14px;
+  }
+  .services-layout {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .services-layout .services-outlet-container {
+    width: 75%;
+    height: inherit;
+  }
+}/*# sourceMappingURL=Mobile.css.map */

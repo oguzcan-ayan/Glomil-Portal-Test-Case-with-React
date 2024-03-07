@@ -1,0 +1,1173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: 0;
+  outline: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+a {
+  color: black;
+}
+
+.portal-header {
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  /* position: fixed;
+  z-index: 3; */
+  border-bottom: 1px solid #dedede;
+  background-color: white;
+  box-shadow: 0.5px 0.5px 5px 1px gray;
+}
+.portal-header a {
+  width: auto;
+  height: auto;
+}
+.portal-header a .glomil-logo {
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+.portal-header .main-contents {
+  display: flex;
+  width: auto;
+  height: auto;
+  align-items: center;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+.portal-header .main-contents :hover {
+  text-decoration: underline;
+}
+.portal-header .main-contents a {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  color: #145E8C;
+  margin-left: 4rem;
+  cursor: pointer;
+}
+.portal-header .searchbox {
+  margin-top: 2.5rem;
+  width: auto;
+  height: 2.5rem;
+  position: relative;
+  margin-left: 5%;
+}
+.portal-header .searchbox .search-icon {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 7px;
+  left: 10px;
+  color: grey;
+}
+.portal-header .searchbox input {
+  border: 2px solid gainsboro;
+  border-radius: 5px;
+  width: auto;
+  height: auto;
+  padding: 5px 0 5px 3rem;
+  font-size: 20px;
+  cursor: pointer;
+}
+.portal-header .searchbox .searchbox-info {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  gap: 5px;
+  background-color: #dedede;
+}
+.portal-header .searchbox .searchbox-info a button {
+  width: 100%;
+  height: auto;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 20px;
+}
+.portal-header .searchbox .searchbox-info a button :hover {
+  background-color: #dedede;
+}
+.portal-header .user-contents {
+  margin-left: 3rem;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portal-header .user-contents .bell-icon {
+  width: 2rem;
+  height: 2rem;
+  color: rgb(0, 50, 100);
+  opacity: 0.7;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+.portal-header .user-contents .bell-icon :hover {
+  opacity: 1;
+  color: blue;
+}
+.portal-header .user-contents .help-icon {
+  width: 2rem;
+  height: 2rem;
+  color: rgb(0, 50, 100);
+  opacity: 0.7;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+.portal-header .user-contents .help-icon :hover {
+  opacity: 1;
+  color: blue;
+}
+.portal-header .user-contents .settings-icon {
+  width: 2rem;
+  height: 2rem;
+  color: rgb(0, 50, 100);
+  opacity: 0.7;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+.portal-header .user-contents .settings-icon :hover {
+  opacity: 1;
+  color: blue;
+}
+.portal-header .user-contents .user-log {
+  display: inline-block;
+  bottom: 5px;
+  width: 3rem;
+  height: 2.8rem;
+  background-color: rgb(79, 121, 149);
+  border-radius: 50%;
+  opacity: 0.5;
+  position: relative;
+  cursor: pointer;
+}
+.portal-header .user-contents .user-log .user-active-dot {
+  width: 0.8rem;
+  height: 0.8rem;
+  position: absolute;
+  background-color: rgb(0, 169, 0);
+  border-radius: 50%;
+  bottom: 2px;
+  right: 1px;
+}
+.portal-header .user-contents .user-log .user-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  color: white;
+  margin-left: 0.6rem;
+  margin-top: 0.5rem;
+}
+.portal-header .user-contents .user-info {
+  width: auto;
+  height: 3rem;
+  margin-left: 1rem;
+}
+.portal-header .user-contents .user-info .username {
+  cursor: pointer;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  opacity: 0.7;
+}
+.portal-header .user-contents .user-info .user-mail {
+  width: auto;
+  height: 1.5rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  color: rgb(75, 115, 135);
+  font-weight: 500;
+}
+
+.welcome-to-portal-content {
+  width: auto;
+  height: 400px;
+  background-color: #172B4E;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+.welcome-to-portal-content .welcome-to-portal-image {
+  width: 25%;
+  height: 75%;
+  background-image: url(../assets/img/welcome-portal.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.welcome-to-portal-content .portal-entry {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+}
+.welcome-to-portal-content .portal-entry .welcome-to-portal {
+  width: auto;
+  height: auto;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 600;
+}
+.welcome-to-portal-content .portal-entry .portal-info {
+  width: 60%;
+  height: auto;
+  font-size: 1.5rem;
+  color: white;
+  line-height: 1.2;
+}
+.welcome-to-portal-content .welcome-button-content {
+  width: auto;
+  height: auto;
+}
+.welcome-to-portal-content .welcome-button-content button {
+  width: 20%;
+  height: 2.5rem;
+  cursor: pointer;
+  background-color: rgb(14, 114, 255);
+  border-radius: 2px;
+  color: white;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.portal-live-products-content {
+  width: 100%;
+  height: auto;
+}
+.portal-live-products-content .portal-live-products-header {
+  width: inherit;
+  height: 2rem;
+  margin-top: 1.5rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #172B4E;
+  font-weight: 600;
+}
+.portal-live-products-content .portal-live-products-info {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  margin-top: 1.5rem;
+  font-size: 20px;
+  color: rgb(20, 94, 140);
+}
+.portal-live-products-content .portal-live-boxes {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto 5rem auto;
+}
+.portal-live-products-content .portal-live-boxes .portal-live-box {
+  width: auto;
+  height: auto;
+  border: 2px solid black;
+  border-right: 0;
+  border-bottom: 0;
+}
+.portal-live-products-content .portal-live-boxes .portal-live-box h3 {
+  width: auto;
+  height: auto;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #152848;
+}
+.portal-live-products-content .portal-live-boxes .portal-live-box .portal-live-messages {
+  width: 14rem;
+  height: auto;
+  margin-left: 1rem;
+}
+.portal-live-products-content .portal-live-boxes .portal-live-box .portal-live-messages div {
+  width: auto;
+  height: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 4px;
+}
+.portal-live-products-content .portal-live-boxes .portal-live-box .portal-live-messages div a {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+.portal-live-products-content .portal-live-boxes .portal-live-box .portal-live-messages div .service-arrow-content {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin-top: 2px;
+}
+.portal-live-products-content .portal-live-boxes .portal-live-box .portal-live-messages div .service-arrow-content .service-arrow {
+  color: blue;
+  width: auto;
+  height: auto;
+}
+
+.portal-services-content {
+  width: 100%;
+  height: 100%;
+}
+.portal-services-content .portal-services {
+  width: inherit;
+  height: inherit;
+  background-image: url(../assets/img/portal-live-products.png);
+  border-bottom: 50px solid #162042;
+}
+.portal-services-content .portal-services p {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 1.5rem auto auto auto;
+  color: white;
+  font-size: 18px;
+}
+.portal-services-content .portal-services h2 {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
+  padding-top: 2rem;
+  padding-right: 1rem;
+  font-size: 2rem;
+  color: white;
+}
+.portal-services-content .portal-services .service-cards-content {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+  margin-left: 23%;
+  gap: 1rem;
+}
+.portal-services-content .portal-services .service-cards-content .sentiment-live {
+  width: auto;
+  height: auto;
+  position: relative;
+}
+.portal-services-content .portal-services .service-cards-content .bots-live {
+  width: auto;
+  height: auto;
+}
+.portal-services-content .portal-services .service-cards-content .service-cards {
+  border-radius: 4px;
+  position: relative;
+}
+.portal-services-content .portal-services .service-cards-content .service-cards .service-cards-image {
+  position: absolute;
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 3px;
+}
+.portal-services-content .portal-services .service-cards-content .service-cards .service-cards-image svg {
+  margin-left: 1rem;
+  margin-top: 1.1rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  color: white;
+}
+.portal-services-content .portal-services .service-cards-content .service-cards .service-cards-header {
+  position: absolute;
+  top: 30%;
+  padding-top: 0;
+  padding-left: 0;
+  left: 1rem;
+  width: auto;
+  height: auto;
+  font-size: 1.3rem;
+  color: #172B4E;
+  font-weight: 600;
+}
+.portal-services-content .portal-services .service-cards-content .service-cards .service-cards-message {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  color: #5B6981;
+  top: 10rem;
+  left: 1.5rem;
+}
+.portal-services-content .portal-services .service-cards-content .service-cards .service-cards-btn {
+  position: absolute;
+  bottom: 2rem;
+  left: 1.4rem;
+  width: 60%;
+  height: 3rem;
+  cursor: pointer;
+  color: #55637C;
+  border-radius: 3px;
+  font-size: 1rem;
+  background-color: #e2e2e2;
+}
+
+.footer-content {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.footer-content span {
+  display: inline-block;
+  color: #152848;
+  width: auto;
+  height: auto;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.footer-content a {
+  display: inline-block;
+  color: #152848;
+  width: auto;
+  height: auto;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.sidebar {
+  width: auto;
+  height: auto;
+  margin-top: 5rem;
+  border-right: 2px solid #b9b9b9;
+  padding-right: 2rem;
+}
+.sidebar .sidebar-title {
+  margin-left: 3rem;
+  width: auto;
+  height: auto;
+  margin-bottom: 2rem;
+  color: #68748B;
+  font-size: 17px;
+  font-weight: 600;
+}
+.sidebar .sidebar-container {
+  margin-left: 3rem;
+  width: auto;
+  height: auto;
+}
+.sidebar .sidebar-container .sidebar-info {
+  width: auto;
+  height: auto;
+  margin-bottom: 1rem;
+  display: flex;
+  cursor: pointer;
+}
+.sidebar .sidebar-container .sidebar-info div {
+  width: auto;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+.sidebar .sidebar-container .sidebar-info div .monitor-icon {
+  margin-top: 4px;
+}
+.sidebar .sidebar-container .sidebar-info div .menu-icon {
+  margin-top: 4px;
+}
+.sidebar .sidebar-container .sidebar-info .service-title {
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+  margin-left: 18px;
+  color: #3B4B69;
+  font-size: 18px;
+  transition: 300ms all;
+}
+.sidebar .sidebar-container .sidebar-info :hover {
+  color: darkblue;
+}
+.sidebar .sidebar-container svg {
+  width: 3rem;
+  height: 2rem;
+}
+
+.services-container {
+  width: auto;
+  height: auto;
+  margin-left: 7%;
+  margin-top: 5rem;
+}
+.services-container div {
+  width: auto;
+  height: auto;
+  margin-left: 0;
+}
+.services-container div a {
+  width: auto;
+  height: auto;
+}
+.services-container div a span {
+  font-size: 20px;
+  margin-left: 0.5rem;
+  color: #636a75;
+}
+.services-container div a .split-breadcrumbs {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  color: #636a75;
+}
+.services-container div a .breadcrumb-home-icon {
+  color: #5D6A81;
+  width: 20px;
+  height: 20px;
+  box-shadow: 1px 1px 5px 2px;
+  background-color: bisque;
+}
+.services-container h1 {
+  width: 30%;
+  height: inherit;
+  margin-top: 1rem;
+}
+.services-container p {
+  width: 30%;
+  height: inherit;
+  margin-top: 1.5rem;
+  font-size: 21px;
+}
+.services-container div {
+  width: auto;
+  height: auto;
+  display: flex;
+  margin-top: 15px;
+  gap: 5px;
+}
+.services-container div a {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 20px;
+}
+.services-container div span {
+  display: inline-block;
+  margin-top: 6px;
+  width: auto;
+  height: auto;
+  color: blue;
+  cursor: pointer;
+}
+.services-container div span .service-arrow {
+  width: 1rem;
+  height: 1rem;
+}
+
+.services-content {
+  width: auto;
+  height: auto;
+}
+.services-content .service-cards-content {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-left: 8%;
+  margin-top: 2rem;
+}
+.services-content .service-cards-content .sentiment-card {
+  width: auto;
+  height: auto;
+  position: relative;
+}
+.services-content .service-cards-content .sentiment-card .service-cards-image {
+  position: absolute;
+  top: 2.5px;
+}
+.services-content .service-cards-content .bots-card {
+  width: auto;
+  height: auto;
+  position: relative;
+}
+.services-content .service-cards-content .bots-card .service-cards-image {
+  position: absolute;
+  top: 2.5px;
+}
+.services-content .service-cards-content .service-cards {
+  border-radius: 4px;
+  position: relative;
+  box-shadow: 0.1px 0.1px 1px 0.1px;
+}
+.services-content .service-cards-content .service-cards .service-cards-image {
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 3px;
+}
+.services-content .service-cards-content .service-cards .service-cards-image svg {
+  margin-left: 1rem;
+  margin-top: 1.1rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  color: white;
+}
+.services-content .service-cards-content .service-cards .service-cards-header {
+  position: absolute;
+  top: 25%;
+  left: 1.5rem;
+  width: 75%;
+  height: auto;
+  font-size: 25px;
+  color: #172B4E;
+  font-weight: 600;
+}
+.services-content .service-cards-content .service-cards .service-cards-message {
+  position: absolute;
+  font-size: 17px;
+  width: 50%;
+  height: auto;
+  color: #5B6981;
+  top: 45%;
+  left: 1.5rem;
+}
+.services-content .service-cards-content .service-cards .service-cards-btn {
+  position: absolute;
+  bottom: 5rem;
+  left: 1.5rem;
+  width: 45%;
+  height: 3rem;
+  cursor: pointer;
+  color: #55637C;
+  border-radius: 3px;
+  font-size: 1rem;
+  background-color: #e2e2e2;
+}
+
+.breadcrumb-content {
+  width: auto;
+  height: auto;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+.breadcrumb-content a {
+  width: auto;
+  height: auto;
+}
+.breadcrumb-content a .breadcrumb {
+  font-size: 20px;
+  margin-left: 0.5rem;
+  color: #636a75;
+}
+.breadcrumb-content a .split-breadcrumbs {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: #636a75;
+}
+.breadcrumb-content a .breadcrumb-home-icon {
+  color: #5D6A81;
+  width: 14px;
+  height: 14px;
+  box-shadow: 1px 1px 5px 2px;
+  background-color: bisque;
+}
+
+.error-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #dedede;
+}
+.error-container .error-image {
+  width: auto;
+  height: auto;
+  opacity: 0.7;
+  text-align: center;
+  padding-top: 10%;
+  margin-left: 1rem;
+}
+.error-container .error-image img {
+  width: auto;
+  height: auto;
+}
+.error-container .error-content-first {
+  width: 50%;
+  height: 20%;
+  margin: auto;
+}
+.error-container .error-content-first h1 {
+  width: 25%;
+  height: 3rem;
+  text-align: center;
+  margin: auto;
+  color: #444;
+}
+.error-container .error-content-first .error-404-content {
+  width: 10%;
+  height: 5rem;
+  margin: auto;
+}
+.error-container .error-content-first .error-404-content .error-404 {
+  width: 5rem;
+  height: inherit;
+  color: #555;
+  margin-left: 0.5rem;
+}
+.error-container .error-content-first .page-not-found {
+  width: 50%;
+  height: 2rem;
+  margin: 1rem 20% auto auto;
+  font-size: 25px;
+  font-weight: 600;
+  color: #333;
+}
+.error-container .exclamation-content {
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem auto;
+  color: #222;
+}
+.error-container .exclamation-content .error-exclamation {
+  width: 3rem;
+  height: 3rem;
+  margin: auto;
+}
+.error-container .error-content-second {
+  width: 50%;
+  height: 20%;
+  margin: 1rem 30% auto;
+}
+.error-container .error-content-second h2 {
+  width: auto;
+  height: auto;
+  display: inline-block;
+}
+.error-container .error-content-second .error-reason {
+  font-size: 20px;
+  margin-left: 1rem;
+}
+.error-container .exit-btns-from-error-page {
+  width: 50%;
+  height: auto;
+  margin: 2rem 15% auto;
+  display: flex;
+}
+.error-container .exit-btns-from-error-page .go-back-btn {
+  width: 50%;
+  height: 2.5rem;
+  border-radius: 4px;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  padding-left: 1.5rem;
+  margin-right: 2.5rem;
+  animation-name: go-back-btn;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  font-size: 1rem;
+}
+@keyframes go-back-btn {
+  0% {
+    background-color: #777;
+  }
+  100% {
+    background-color: #999;
+  }
+}
+.error-container .exit-btns-from-error-page .go-back-btn .go-back-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  left: 0.3rem;
+  bottom: 0.5rem;
+  background-color: white;
+  border-radius: 50%;
+}
+.error-container .exit-btns-from-error-page .go-to-home-page-btn {
+  width: 50%;
+  height: 2.5rem;
+  margin-left: 2.5rem;
+  border-radius: 4px;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  padding-left: 2rem;
+  font-size: 1rem;
+  background-color: #00a870;
+}
+.error-container .exit-btns-from-error-page .go-to-home-page-btn .go-to-home-page-icon {
+  width: 2rem;
+  height: 1.2rem;
+  position: absolute;
+  left: 0.3rem;
+  bottom: 0.7rem;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.sentiment-analyze-card {
+  width: 100%;
+  height: auto;
+  margin: 5% 0 25% 10%;
+}
+.sentiment-analyze-card a {
+  display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.sentiment-analyze-card a .service-cards {
+  border-radius: 4px;
+  position: relative;
+  box-shadow: 1px 1px 10px 2px;
+}
+.sentiment-analyze-card a .service-cards .service-cards-image {
+  margin-left: 10%;
+  margin-top: 2rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 3px;
+  position: absolute;
+}
+.sentiment-analyze-card a .service-cards .service-cards-image svg {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  color: white;
+}
+.sentiment-analyze-card a .service-cards .service-cards-header {
+  position: absolute;
+  top: 30%;
+  left: 2rem;
+  width: auto;
+  height: auto;
+  font-size: 1.5rem;
+  color: #172B4E;
+  font-weight: 600;
+}
+.sentiment-analyze-card a .service-cards .service-cards-message {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  color: #5B6981;
+  top: 50%;
+  left: 2rem;
+}
+.sentiment-analyze-card a .service-cards .service-cards-btn {
+  position: absolute;
+  bottom: 4rem;
+  left: 2rem;
+  width: 50%;
+  height: 3rem;
+  cursor: pointer;
+  color: #55637C;
+  border-radius: 3px;
+  font-size: 1rem;
+  background-color: #e2e2e2;
+}
+
+.sentiment-container {
+  width: auto;
+  height: auto;
+}
+.sentiment-container .sentiment-bots-info {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  margin-left: 5rem;
+  border-bottom: 1px solid #b9b9b9;
+}
+.sentiment-container .sentiment-bots-info h1 {
+  width: auto;
+  height: auto;
+  margin-top: 1.5rem;
+  color: #000F34;
+}
+.sentiment-container .sentiment-bots-info p {
+  width: auto;
+  height: auto;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 20px;
+}
+
+.query-field {
+  width: auto;
+  height: auto;
+  margin-left: 5rem;
+  margin-top: 5rem;
+  /*    .toastify-container{
+      svg{
+          width: 2rem;
+          height: 2rem;
+          top: 1rem;
+          right: 1rem;
+      }
+  } */
+}
+.query-field h1 {
+  width: inherit;
+  height: inherit;
+}
+.query-field .text-query-field {
+  width: auto;
+  height: auto;
+  display: flex;
+  margin-top: 1.5rem;
+}
+.query-field .text-query-field input {
+  width: 50%;
+  height: 5rem;
+  padding-bottom: 2rem;
+  padding-left: 0.5rem;
+  border: 1px solid #E0E2E6;
+  background-color: #f0f0f0;
+  font-size: 1rem;
+}
+.query-field .text-query-field .query-btn {
+  width: 10%;
+  height: 2.5rem;
+  font-size: 18px;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+  background-color: #0252CC;
+  color: white;
+  cursor: pointer;
+}
+.query-field .query-result {
+  width: 25%;
+  height: 4.5rem;
+  background-color: #cdfde4;
+  margin-top: 1.5rem;
+  border-radius: 4px;
+  margin-bottom: 5rem;
+}
+.query-field .query-result .query-true-field {
+  width: 2rem;
+  height: 2rem;
+  background-color: #006644;
+  top: 1rem;
+  left: 1.5rem;
+  border-radius: 50%;
+  position: relative;
+}
+.query-field .query-result .query-true-field .true-icon {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 3px;
+  margin-left: 4px;
+  color: white;
+}
+
+.bots-container {
+  width: auto;
+  height: auto;
+}
+.bots-container .sentiment-bots-info {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: inherit;
+  margin-left: 4.5rem;
+  border-bottom: 1px solid #b9b9b9;
+}
+.bots-container .sentiment-bots-info h1 {
+  width: auto;
+  height: auto;
+  margin-top: 1.5rem;
+  color: #000F34;
+}
+.bots-container .sentiment-bots-info p {
+  width: auto;
+  height: auto;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 20px;
+}
+
+.algorithm-field-info {
+  width: auto;
+  height: auto;
+  margin-left: 5%;
+  margin-top: 3rem;
+}
+.algorithm-field-info h1 {
+  width: inherit;
+  height: inherit;
+}
+.algorithm-field-info label {
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+  margin-top: 1.5rem;
+}
+
+.algorithm-field {
+  width: auto;
+  height: auto;
+  margin-left: 0;
+  margin-top: 1rem;
+}
+.algorithm-field div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: inherit;
+  height: inherit;
+}
+.algorithm-field div .user-algorithm {
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+  border-right: 1px solid #b9b9b9;
+  padding-right: 5rem;
+}
+.algorithm-field div .user-algorithm .bot-user-algorithm {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #b9b9b9;
+  padding-bottom: 1rem;
+  flex-direction: column;
+}
+.algorithm-field div .user-algorithm .bot-user-algorithm select {
+  width: 100%;
+  height: 4rem;
+  background-color: #f0f0f0;
+  padding-left: 0.5rem;
+  border-radius: 3px;
+  font-size: 1.5rem;
+}
+.algorithm-field div .user-algorithm .bot-user-algorithm select option {
+  font-size: 20px;
+}
+.algorithm-field div .user-algorithm .user-count-container {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+.algorithm-field div .user-algorithm .user-count-container div {
+  width: 100%;
+  height: 3rem;
+  margin-top: 1rem;
+}
+.algorithm-field div .user-algorithm .user-count-container div input {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  border: 2.5px solid gainsboro;
+  background-color: #f0f0f0;
+  padding-left: 0.5rem;
+  padding-bottom: 1rem;
+}
+.algorithm-field div .user-algorithm .user-count-container .algorithm-btn-content {
+  width: 25%;
+  height: auto;
+}
+.algorithm-field div .user-algorithm .user-count-container .algorithm-btn-content .algorithm-btn {
+  width: 100%;
+  height: 2.5rem;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: #0252CC;
+  color: white;
+  cursor: pointer;
+}
+.algorithm-field div .algorithm-result {
+  width: auto;
+  height: 50%;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.algorithm-field div .algorithm-result h1 {
+  width: auto;
+  height: auto;
+}
+.algorithm-field div .algorithm-result .algorithm-result-box {
+  width: 100%;
+  height: inherit;
+  background-color: #cdfde4;
+  margin-top: 1.5rem;
+  position: relative;
+  border-radius: 4px;
+}
+.algorithm-field div .algorithm-result .algorithm-result-box .algorithm-true-field {
+  width: 2rem;
+  height: 2rem;
+  background-color: #006644;
+  top: 15px;
+  left: 1.5rem;
+  border-radius: 50%;
+  position: absolute;
+}
+.algorithm-field div .algorithm-result .algorithm-result-box .algorithm-true-field .true-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 3px;
+  margin-left: 2px;
+  color: white;
+}
+.algorithm-field div .algorithm-result .algorithm-result-box .algorithm-result-text-box {
+  width: auto;
+  height: auto;
+  margin-top: 1rem;
+  margin-right: 30%;
+  display: block;
+}
+.algorithm-field div .algorithm-result .algorithm-result-box .algorithm-result-text-box .algorithm-result-text {
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  color: #01143C;
+}
+.algorithm-field div .algorithm-result .algorithm-result-box .algorithm-result-text-box .algorithm-ratio {
+  width: auto;
+  height: auto;
+  display: inline-block;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 20px;
+}
+
+.services-layout {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+.services-layout .services-outlet-container {
+  width: 75%;
+  height: inherit;
+}
+
+/*   .toastify-container{
+    svg{
+        width: 2rem;
+        height: 2rem;
+        top: 1rem;
+        right: 1rem;
+    }
+} *//*# sourceMappingURL=App.css.map */

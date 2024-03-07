@@ -1,0 +1,437 @@
+@media(max-width: 992px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+        border: 0;
+        outline: 0;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    $base-color1: white;
+    $base-color2: black;
+    $color1: blue;
+
+    a {
+        color: $base-color2;
+    }
+
+    .portal-header {
+
+        a {
+            .glomil-logo {
+                width: 100px;
+                height: 50px;
+                margin-top: 2rem;
+            }
+        }
+
+        .main-contents {
+            margin-top: 5px;
+            margin-left: 0;
+        }
+
+        .searchbox {
+            height: 2.5rem;
+            margin-left: 1rem;
+            flex-basis: 150px;
+            margin-top: 42px;
+
+            .search-icon {
+                width: 20px;
+                height: 20px;
+                top: 4px;
+                left: 5px;
+            }
+
+            input {
+                height: auto;
+                padding: 5px 0 5px 27px;
+                font-size: 12px;
+            }
+
+            .searchbox-info {
+                gap: 1px;
+            }
+        }
+
+        .user-contents {
+            margin-left: 0.5rem;
+            display: flex;
+            flex-grow: 1;
+            margin-top: 5px;
+
+            .bell-icon {
+                margin-left: 4px;
+                margin-right: 0.5rem;
+            }
+
+            .help-icon {
+                margin-right: 0.5rem;
+                margin-left: 0.5rem;
+            }
+
+            .settings-icon {
+                margin-left: 0.5rem;
+                margin-right: 1rem;
+            }
+
+            .user-log {
+                bottom: 0;
+                margin-right: 5px;
+
+                .user-icon {
+                    margin-top: 6px;
+                }
+            }
+
+            .user-info {
+                margin-left: 0;
+                text-align: center;
+                margin-top: 0.5rem;
+
+                .username {
+                    margin-right: 1rem;
+                    letter-spacing: 0;
+                }
+
+                .user-mail {
+                    margin-top: 0;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .scroll-to-top-btn {
+        bottom: 1rem;
+        right: 1rem;
+
+        .arrow-up {
+            width: 2.5rem;
+            height: 2rem;
+        }
+    }
+
+    .welcome-to-portal-content {
+        .welcome-button-content {
+            width: 40%;
+        }
+    }
+
+    .portal-live-products-content {
+        .portal-live-boxes {
+            width: 40%;
+        }
+    }
+
+    .sidebar {
+        padding-right: 0;
+
+        .sidebar-title {
+            margin-left: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 16px;
+        }
+
+        .sidebar-container {
+            margin-left: 0;
+
+            .sidebar-info {
+                margin-bottom: 0.5rem;
+
+                div {
+
+                    .monitor-icon {
+                        margin-top: 4px;
+                    }
+
+                    .menu-icon {
+                        margin-top: 4px;
+                    }
+                }
+
+                .service-title {
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin-left: 5px;
+                }
+            }
+
+            svg {
+                width: 3rem;
+                height: 1.5rem;
+            }
+        }
+
+    }
+
+    .sentiment-container {
+
+        .sentiment-bots-info {
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                margin-top: 1.5rem;
+                font-size: 15px;
+                font-weight: 600;
+            }
+        }
+
+    }
+
+    .query-field {
+        margin-left: 2rem;
+        margin-top: 2rem;
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        .text-query-field {
+
+            input {
+                width: 50%;
+                height: 3.5rem;
+                padding-bottom: 1.5rem;
+                padding-left: 0.5rem;
+            }
+
+            .query-btn {
+                width: 25%;
+                height: 2rem;
+                font-size: 16px;
+            }
+        }
+
+        .query-result {
+            height: 3rem;
+            margin-top: 1rem;
+
+            .query-true-field {
+                width: 1rem;
+                height: 1rem;
+
+                .true-icon {
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+        }
+    }
+
+    .bots-container {
+
+        .sentiment-bots-info {
+            margin-left: 2rem;
+
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 15px;
+                font-weight: 600;
+            }
+        }
+
+    }
+
+    .algorithm-field-info {
+        margin-top: 1.5rem;
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+    }
+
+    .algorithm-field {
+        margin-left: 1.5rem;
+
+
+        div {
+
+            .user-algorithm {
+                padding-right: 2rem;
+
+                .bot-user-algorithm {
+
+                    select {
+                        height: 2.5rem;
+                        font-size: 14px;
+
+                        option {
+                            font-size: 12px;
+                        }
+                    }
+
+                }
+
+                .user-count-container {
+
+                    div {
+                        margin-top: 0.5rem;
+
+                        input {
+                            font-size: 14px;
+
+                        }
+                    }
+
+                    .algorithm-btn-content {
+                        width: 60%;
+
+                        .algorithm-btn {
+                            width: 100%;
+                            height: 1.5rem;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+            .algorithm-result {
+                margin-left: 1rem;
+
+                h1 {
+                    font-size: 20px;
+                }
+
+                .algorithm-result-box {
+
+                    .algorithm-true-field {
+                        top: 12px;
+                        left: 12px;
+
+                        .true-icon {
+                            margin-top: 2px;
+                            margin-left: 0;
+                        }
+                    }
+
+                    .algorithm-result-text-box {
+                        margin-right: 10%;
+
+
+                        .algorithm-result-text {
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+
+                        .algorithm-ratio {
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .services-container {
+
+        h1 {
+            width: 75%;
+        }
+
+        p {
+            width: 75%;
+        }
+
+    }
+
+    .services-content {
+
+        .service-cards-content {
+            margin-left: 5%;
+
+            .service-cards {
+                width: 10rem !important;
+                height: 20rem !important;
+
+                .service-cards-image {
+                    margin-left: 1rem;
+                    margin-top: 0.5rem;
+                    width: 3rem;
+                    height: 3rem;
+
+                    svg {
+                        margin-left: 10px;
+                        margin-top: 0.5rem;
+                    }
+                }
+
+                .service-cards-header {
+                    top: 22%;
+                    left: 1rem;
+                    font-size: 18px;
+
+                }
+
+                .service-cards-message {
+                    font-size: 15px;
+                    width: 75%;
+                    top: 45%;
+                    left: 1rem;
+                }
+
+                .service-cards-btn {
+                    bottom: 1rem;
+                    left: 1rem;
+                    width: 75%;
+                    height: 2rem;
+                }
+            }
+
+        }
+    }
+
+    .breadcrumb-content {
+        margin-top: 20%;
+
+        a {
+            .breadcrumb-home-icon {
+                width: 1rem;
+                height: 1rem;
+            }
+
+            .breadcrumb {
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            .split-breadcrumbs {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .error-container {
+
+        .error-content-first {
+
+            .page-not-found {
+                margin-left: 1rem;
+            }
+        }
+
+        .error-content-second {
+
+            .error-reason {
+                font-size: 18px;
+                margin-left: 0.5rem;
+            }
+
+            .exclamation-content {
+                margin-right: 0.5rem;
+            }
+
+        }
+    }
+}

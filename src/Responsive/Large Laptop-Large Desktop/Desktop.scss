@@ -1,0 +1,457 @@
+@media(max-width: 1440px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+        border: 0;
+        outline: 0;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    $base-color1: white;
+    $base-color2: black;
+    $color1: blue;
+
+    a {
+        color: $base-color2;
+    }
+
+
+    .portal-header {
+
+        a {
+            .glomil-logo {
+                margin-top: 0.5rem;
+                width: 150px;
+                height: 100px;
+            }
+        }
+
+        .main-contents {
+            font-size: 1rem;
+
+            a {
+
+                margin-left: 2rem;
+            }
+        }
+
+        .searchbox {
+            width: 50%;
+
+            .search-icon {
+                top: 4px;
+            }
+
+            input {
+                width: 100%;
+                height: 2rem;
+                font-size: 16px;
+            }
+
+            .searchbox-info {
+                gap: 2px;
+                margin-top: 2px;
+
+                a {
+                    button {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        .user-contents {
+            margin-left: 4rem;
+
+            .bell-icon {
+                width: 1.5rem;
+                height: 1.5rem;
+                margin-right: 1.5rem;
+            }
+
+            .help-icon {
+                width: 1.5rem;
+                height: 1.5rem;
+                margin-right: 1.5rem;
+
+            }
+
+            .settings-icon {
+                width: 1.5rem;
+                height: 1.5rem;
+                margin-right: 1.5rem;
+            }
+
+            .user-log {
+                width: 2.5rem;
+                height: 2.5rem;
+
+                .user-active-dot {
+                    width: 0.5rem;
+                    height: 0.5rem;
+                }
+
+                .user-icon {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    margin-left: 0.5rem;
+                }
+            }
+
+            .user-info {
+                .username {
+                    font-size: 1rem;
+                    letter-spacing: 0;
+                }
+
+                .user-mail {
+                    font-size: 15px;
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .scroll-to-top-btn {
+        bottom: 2rem;
+        right: 2rem;
+    }
+
+    .welcome-to-portal-content {
+
+        .welcome-to-portal-image {
+            flex-grow: 1;
+        }
+
+        .portal-entry {
+            margin-left: 10%;
+
+            .welcome-to-portal {
+                width: 75%;
+                margin-bottom: 1rem;
+                font-size: 2rem;
+            }
+
+            .portal-info {
+                font-size: 1rem;
+            }
+        }
+
+        .welcome-button-content {
+            width: 30%;
+            height: 3rem;
+            margin-top: 1rem;
+
+            button {
+                width: 100%;
+                margin-top: 0;
+                font-size: 14px;
+            }
+
+        }
+
+    }
+
+    .portal-live-products-content {
+        .portal-live-boxes {
+            .portal-live-box {
+                border: 1px solid black;
+            }
+        }
+    }
+
+    .portal-services-content {
+        .portal-services {
+            .service-cards-content {
+                margin-left: 12%;
+
+                .sentiment-live {
+                    width: auto;
+                    height: auto;
+                    position: relative;
+                }
+
+                .bots-live {
+                    width: auto;
+                    height: auto;
+
+                }
+            }
+        }
+    }
+
+    .footer-content {
+        span {
+            font-size: 1rem;
+        }
+
+        a {
+            font-size: 1rem;
+        }
+    }
+
+    .sidebar {
+        .sidebar-title {
+            margin-left: 2rem;
+        }
+
+        .sidebar-container {
+            margin-left: 2rem;
+
+            .sidebar-info {
+                div {
+                    .monitor-icon {
+                        margin-top: 8px;
+                    }
+
+                    .menu-icon {
+                        margin-top: 10px;
+                    }
+                }
+            }
+
+            svg {
+                width: 2.5rem;
+                height: 1.5rem;
+                margin-top: 7px;
+            }
+        }
+
+    }
+
+    .services-container {
+
+        h1 {
+            width: 40%;
+
+        }
+
+        p {
+            width: 40%;
+
+        }
+
+    }
+
+    .sentiment-container {
+
+        .sentiment-bots-info {
+
+            margin-left: 3rem;
+
+            h1 {
+                width: auto;
+                height: auto;
+                margin-top: 1.5rem;
+                color: #000F34;
+            }
+
+            p {
+                width: auto;
+                height: auto;
+                margin-top: 2rem;
+                margin-bottom: 1.5rem;
+                font-size: 20px;
+            }
+        }
+
+    }
+
+    .query-field {
+        margin-top: 4rem;
+        margin-left: 3rem;
+
+        .text-query-field {
+
+            input {
+
+                height: 4rem;
+                padding-bottom: 1.5rem;
+            }
+
+            .query-btn {
+                width: 15%;
+                height: 35px;
+                font-size: 17px;
+                font-weight: 600;
+            }
+        }
+
+        .query-result {
+            height: 4rem;
+
+            .query-true-field {
+                width: 1.5rem;
+                height: 1.5rem;
+                top: 0.5rem;
+                left: 1rem;
+
+                .true-icon {
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    margin-top: 2px;
+                    margin-left: 2px;
+
+                }
+            }
+        }
+    }
+
+    .bots-container {
+
+        .sentiment-bots-info {
+            margin-left: 3rem;
+
+            p {
+                margin-top: 1.5rem;
+            }
+        }
+
+    }
+
+    .algorithm-field-info {
+        margin-top: 2.5rem;
+
+        label {
+            margin-top: 1rem;
+        }
+    }
+
+    .algorithm-field {
+        margin-left: 3rem;
+
+        div {
+
+            .user-algorithm {
+                padding-right: 2rem;
+
+                .bot-user-algorithm {
+
+                    select {
+                        height: 3rem;
+                        font-size: 18px;
+
+                        option {
+                            font-size: 16px;
+                        }
+                    }
+
+                }
+
+                .user-count-container {
+
+                    div {
+                        height: 2.5rem;
+                        margin-top: 0.5rem;
+
+                    }
+
+                    .algorithm-btn-content {
+                        width: 40%;
+                        height: auto;
+
+                        .algorithm-btn {
+                            height: 35px;
+                            font-size: 18px;
+
+                        }
+                    }
+                }
+            }
+
+            .algorithm-result {
+                h1 {
+                    font-size: 1.5rem;
+                }
+
+                .algorithm-result-box {
+
+                    .algorithm-true-field {
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        top: 1rem;
+                        left: 1rem;
+
+                        .true-icon {
+                            width: 20px;
+                            height: 20px;
+                            margin-top: 2px;
+                            margin-left: 0;
+                        }
+                    }
+
+                    .algorithm-result-text-box {
+                        margin-top: 1rem;
+                        margin-right: 20%;
+
+                        .algorithm-result-text {
+                            font-size: 18px;
+
+                        }
+
+                        .algorithm-ratio {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .services-content {
+
+        .service-cards-content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            .sentiment-card {
+                width: 75%;
+
+            }
+
+            .bots-card {
+                width: 75%;
+
+            }
+
+        }
+    }
+
+    .error-container {
+
+        .error-content-first {
+
+            .page-not-found {
+                font-size: 22px;
+                margin-left: 1rem;
+            }
+        }
+
+        .error-content-second {
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .error-reason {
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            .exclamation-content {
+                margin-right: 0.5rem;
+            }
+
+        }
+
+        .exit-btns-from-error-page {
+            width: 60%;
+            margin-right: 4rem;
+        }
+    }
+}
