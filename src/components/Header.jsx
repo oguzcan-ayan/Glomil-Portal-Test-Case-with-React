@@ -14,7 +14,7 @@ function Header() {
         <>
             <div className='portal-header'>
                 <NavLink to="/">
-                    <img className='glomil-logo' src="src\assets\img\glomil-site-page.png" alt="glomil-site-logo" />
+                    <img className='glomil-logo' src='src\assets\img\glomil-logo.png' alt="glomil-site-logo" />
                 </NavLink>
 
                 <ResponsiveHeader />
