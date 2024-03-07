@@ -29,9 +29,9 @@
     height: 100px;
     cursor: pointer;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     -o-object-position: center;
-       object-position: center;
+    object-position: center;
   }
   .portal-header .main-contents {
     display: flex;
@@ -186,7 +186,7 @@
   .welcome-to-portal-content {
     width: auto;
     height: 400px;
-    background-color: #172B4E;
+    background-color: #172b4e;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -266,7 +266,10 @@
     margin-top: 1rem;
     width: auto;
   }
-  .portal-services-content .portal-services .service-cards-content .sentiment-live {
+  .portal-services-content
+    .portal-services
+    .service-cards-content
+    .sentiment-live {
     width: 50%;
     height: auto;
     position: relative;
@@ -367,10 +370,19 @@
     font-size: 16px;
     padding-bottom: 8px;
   }
-  .algorithm-field div .user-algorithm .user-count-container .algorithm-btn-content {
+  .algorithm-field
+    div
+    .user-algorithm
+    .user-count-container
+    .algorithm-btn-content {
     width: 40%;
   }
-  .algorithm-field div .user-algorithm .user-count-container .algorithm-btn-content .algorithm-btn {
+  .algorithm-field
+    div
+    .user-algorithm
+    .user-count-container
+    .algorithm-btn-content
+    .algorithm-btn {
     height: 32px;
     font-size: 16px;
   }
@@ -380,11 +392,19 @@
   .algorithm-field div .algorithm-result .algorithm-result-box {
     margin-top: 1rem;
   }
-  .algorithm-field div .algorithm-result .algorithm-result-box .algorithm-true-field {
+  .algorithm-field
+    div
+    .algorithm-result
+    .algorithm-result-box
+    .algorithm-true-field {
     top: 14px;
     left: 14px;
   }
-  .algorithm-field div .algorithm-result .algorithm-result-box .algorithm-result-text-box {
+  .algorithm-field
+    div
+    .algorithm-result
+    .algorithm-result-box
+    .algorithm-result-text-box {
     margin-top: 14px;
     margin-right: 15%;
   }
@@ -409,4 +429,4 @@
     margin: 1rem 10% auto auto;
     font-size: 23px;
   }
-}/*# sourceMappingURL=Laptop.css.map */
+} /*# sourceMappingURL=Laptop.css.map */
