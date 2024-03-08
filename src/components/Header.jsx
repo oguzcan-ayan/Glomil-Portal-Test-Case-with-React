@@ -21,10 +21,11 @@ function Header() {
         const innerWidth = window.innerWidth;
 
         if (innerWidth && innerWidth <= 768) {
-            console.log(innerWidth);
             setIsMobile(true);
         }
     }, []);
+
+    console.log(innerWidth);
 
     useEffect(() => {
 
