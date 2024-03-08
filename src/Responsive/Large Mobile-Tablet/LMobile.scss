@@ -250,21 +250,23 @@
         }
 
         .sentiment-live {
-          width: auto;
+          width: fit-content;
           height: auto;
-          position: relative;
+          margin-left: 2rem;
 
           .service-cards {
-            margin-left: 2rem;
+            margin-left: 0;
+
           }
         }
 
         .bots-live {
-          width: auto;
+          width: fit-content;
           height: auto;
+          margin-left: 2rem;
 
           .service-cards {
-            margin-left: 2rem;
+            margin-left: 0;
           }
         }
       }
