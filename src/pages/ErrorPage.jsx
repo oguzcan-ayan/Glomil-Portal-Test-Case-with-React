@@ -19,7 +19,7 @@ function ErrorPage() {
             <div className='error-container'>
 
                 <div className='error-image'>
-                    <img src="https://media.licdn.com/dms/image/D4D16AQGvzn0nUuSGiA/profile-displaybackgroundimage-shrink_200_800/0/1685447013420?e=2147483647&v=beta&t=i920UuXxz3cZhyNim58rFklB-vK749XDvg3RPOgbcgg" alt='glomil-site-logo' />
+                    <img className='glomil-logo' src='assets/img/glomil-logo.png' alt="glomil-site-logo" />
                 </div>
                 <div className='error-content-first'>
                     <h1>ERROR</h1>
